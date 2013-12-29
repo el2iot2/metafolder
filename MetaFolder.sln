@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder", "MetaFolder\MetaFolder.csproj", "{D7540C70-78EE-48BC-92E2-15A8E94B6984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder.Tasks", "MetaFolder.Tasks\MetaFolder.Tasks.csproj", "{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder.Tests", "MetaFolder.Tests\MetaFolder.Tests.csproj", "{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder.Representations.Amazon.S3", "MetaFolder.Representations.Amazon.S3\MetaFolder.Representations.Amazon.S3.csproj", "{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder.Representations.System.IO", "MetaFolder.Representations.System.IO\MetaFolder.Representations.System.IO.csproj", "{BFC1D141-6C18-440F-87F3-30405FA53B86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E7DC70CB-2B9B-4FAE-B306-7C1F0204E123}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E7DC70
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFolder.System.IO", "MetaFolder.System.IO\MetaFolder.System.IO.csproj", "{6465C91A-522A-4588-A0FE-EC886930DC1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,16 +36,6 @@ Global
 		{D7540C70-78EE-48BC-92E2-15A8E94B6984}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D7540C70-78EE-48BC-92E2-15A8E94B6984}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D7540C70-78EE-48BC-92E2-15A8E94B6984}.Release|x86.ActiveCfg = Release|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6D68FCB2-02B6-4593-B61C-72B65F7BDC4E}.Release|x86.ActiveCfg = Release|Any CPU
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -58,26 +46,16 @@ Global
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{201DEB40-21FF-4E60-AB42-E6FFF3812FCE}.Release|x86.ActiveCfg = Release|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{3F7D6E9D-D876-46B2-A381-FAEE26D73D3C}.Release|x86.ActiveCfg = Release|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{BFC1D141-6C18-440F-87F3-30405FA53B86}.Release|x86.ActiveCfg = Release|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6465C91A-522A-4588-A0FE-EC886930DC1D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
